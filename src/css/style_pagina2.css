@@ -23,165 +23,99 @@ body{
     font-family: 'poppins', sans-serif;
 }
 
-
-
-#cabecalho{
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-}
-
 .container-cabecalho{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 80px;
-    padding: 30px 0px;
-    border-bottom: 2px solid var(--color-neutral-1);
+    border-bottom: none;
 }
 
-.container-imagem-lista-header{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
 
-#cabecalho .list{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
-    color: var(--color-neutral-1);
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.container-botoes-header{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.telefone{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.botao-donate{
+#secao-disponiveis{
+    padding-top: 80px;
+    background-color:var(--color-neutral-1);
     color: var(--color-neutral-2);
-    font-size: 16px;
-    font-weight: 700;
-    background-color: var(--color-neutral-3);
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-
-.img-coracao-branco{
-    width: 18px;
-    height: 18px;
-}
-
-.linha{
-    width: 1000px;
-    text-align: center;
-    border: 1px solid var(--color-neutral-1);
-}
-
-
-#rodape{
-    width: 100%;
-    padding-top: 60px;
     padding-bottom: 80px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 
-.container-rodape{
-
-    max-width: 1200px;
-    display: grid;
-    gap: 72px;
-    grid-template-areas: 
-    "logo-adocao list-rodape-navegacao1 list-rodape-navegacao2 container-informacoes-rodape";
-    grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 30px;
-    border-bottom: 2px solid var(--color-neutral-1);
-}
-
-.logo-adocao{
-    grid-area: logo-adocao;
+#secao-disponiveis button{
+    width: 220px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.logo-adocao img{
-    max-width: 200px;
-    max-height: 170px;
-}
-
-.list-rodape-navegacao1{
-    list-style: none;
-    grid-area: list-rodape-navegacao1;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-}
-
-.list-rodape-navegacao2{
-    list-style: none;
-    grid-area: list-rodape-navegacao2;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-}
-
-.container-informacoes-rodape{
-    grid-area: container-informacoes-rodape;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 14px;
-}
-
-.list-informacoes{
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-}
-
-.list-item-info{
-    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 12px 28px;
     gap: 8px;
-}
 
-.redes-sociais{
-    display: flex;
-    gap: 14px;
-}
+    border-radius: 32px;
+    border: none;
 
-.redes-sociais img{
-    width: 28px;
-    height: 28px;
-}
+    background-color: #37383F;
+    color: var(--color-neutral-2);
 
-.texto-rodape{
-    margin-top: 30px;
     font-family: Poppins;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 51.2px;
-    letter-spacing: -0.02em;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-.texto-rodape strong{
-    color: #FF3D9A;
+a button .icone-flecha{
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+a button{
+    color: #FFFFFF;
+}
+
+#secao-disponiveis h1{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: Poppins;
+    font-size: 56px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#secao-disponiveis ul{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-flow: row wrap;
+}
+
+#secao-disponiveis ul li div{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#secao-disponiveis ul li div button{
+
+    background: var(--color-neutral-3);
+}
+
+#secao-disponiveis ul li img{
+    width: 30px;
+    height: 26px;
+}
+
+#secao-disponiveis ul li .imagem-animal{
+
+    width: 220px;
+    height: 220px;
+
+}
+
+
+ul li .nome-animal{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+
+    letter-spacing: -0.02em;
+    text-align: center;
 
 }
