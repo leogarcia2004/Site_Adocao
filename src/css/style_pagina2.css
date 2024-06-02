@@ -1,0 +1,187 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    border-box: box-sizing;
+}
+
+:root{
+    --color-neutral-0: #F5F5F5;
+    --color-neutral-1: #1E1F27;
+    --color-neutral-2: #FFFFFF;
+    --color-neutral-3: #FF3D9A;
+    --color-neutral-4: #F8DB46;
+    --color-neutral-5: #F8DB46;
+    --color-neutral-6: #F8DB46;
+}
+
+body{
+    width: 100%;
+    background-color: var(--color-neutral-0);
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+#cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.container-cabecalho{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 80px;
+    padding: 30px 0px;
+    border-bottom: 2px solid var(--color-neutral-1);
+}
+
+.container-imagem-lista-header{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#cabecalho .list{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    color: var(--color-neutral-1);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container-botoes-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.telefone{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.botao-donate{
+    color: var(--color-neutral-2);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--color-neutral-3);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.img-coracao-branco{
+    width: 18px;
+    height: 18px;
+}
+
+.linha{
+    width: 1000px;
+    text-align: center;
+    border: 1px solid var(--color-neutral-1);
+}
+
+
+#rodape{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container-rodape{
+
+    max-width: 1200px;
+    display: grid;
+    gap: 72px;
+    grid-template-areas: 
+    "logo-adocao list-rodape-navegacao1 list-rodape-navegacao2 container-informacoes-rodape";
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--color-neutral-1);
+}
+
+.logo-adocao{
+    grid-area: logo-adocao;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.logo-adocao img{
+    max-width: 200px;
+    max-height: 170px;
+}
+
+.list-rodape-navegacao1{
+    list-style: none;
+    grid-area: list-rodape-navegacao1;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.list-rodape-navegacao2{
+    list-style: none;
+    grid-area: list-rodape-navegacao2;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.container-informacoes-rodape{
+    grid-area: container-informacoes-rodape;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 14px;
+}
+
+.list-informacoes{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.list-item-info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 14px;
+}
+
+.redes-sociais img{
+    width: 28px;
+    height: 28px;
+}
+
+.texto-rodape{
+    margin-top: 30px;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 51.2px;
+    letter-spacing: -0.02em;
+}
+
+.texto-rodape strong{
+    color: #FF3D9A;
+
+}

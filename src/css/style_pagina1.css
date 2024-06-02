@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    
     border-box: box-sizing;
 }
 
@@ -19,7 +18,6 @@
 }
 
 
-
 body{
     width: 100%;
     height: 100vh;
@@ -31,7 +29,7 @@ body{
     background-color: var(--color-neutral-0); 
 }
 
-#secao2, #secao3 #secao4, #secao5, #secao6, #rodape{
+#secao2, #secao3 #secao4, #secao5, #secao6{
     width: 100%;
     padding-top: 80px;
 
@@ -47,11 +45,8 @@ body{
     background-color: var(--color-neutral-1);
 }
 
-.modal-apply.invisivel{
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    z-index: -1;
+button{
+    cursor: pointer;
 }
 
 .container-secao1{
@@ -59,7 +54,6 @@ body{
     max-width: 1200px;
     width: 78%;
     display: flex;
-    /* flex-flow: column wrap; */
     gap: 40px;
     max-height: 560px;
     margin: 0 auto;
@@ -71,12 +65,10 @@ body{
     display: flex;
     gap: 20px;
     flex-flow: column wrap;
-    
 }
 
 #secao1 .container-informacoes-secao1 h1{
     font-size: 50px;
-
 }
 
 #secao1 .container-informacoes-secao1 p{
@@ -110,7 +102,6 @@ body{
     border: 2px solid ;
     border-radius: 26px;
     padding: 6px 26px;
-    cursor: pointer;
 }
 
 .icone-cachorro{
@@ -177,7 +168,6 @@ body{
 }
 
 .container-passagem-imagem{
-
     display: flex;
     flew-flow: row wrap;
     align-items: center;
@@ -223,7 +213,6 @@ body{
 }
 
 .botao-carrosel.selecionado{
-    
     background-color: var(--color-neutral-2);
 }
 
@@ -330,13 +319,12 @@ body{
 #secao4 h1{
     color: var(--color-neutral-7);
     margin-bottom: 20px;
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .container-secao4 img{
     max-width: 42%;
-    
 }
 
 .container-informacoes-secao4 span{
@@ -392,7 +380,6 @@ body{
 }
 
 .subcontainer1-secao5 h1{
-    
     font-family: Poppins;
     font-size: 46px;
     font-weight: 700;
@@ -402,7 +389,6 @@ body{
 }
 
 .subcontainer1-secao5 img{
-    
     width: 40.25px;
     height: 40.3px;
     gap: 0px;
@@ -418,7 +404,6 @@ body{
 }
 
 .card-acao{
-
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
@@ -512,8 +497,6 @@ body{
 }
 
 .adotaveis{
-    /* width:  200px;
-    height: 48px; */
     padding: 10px 32px 10px 32px;
     gap: 8px;
     border-radius: 32px;
@@ -529,8 +512,6 @@ body{
 }
 
 .botao-adocao.secao5{
-    /* width:  200px;
-    height: 48px; */
     padding: 10px 32px 10px 32px;
     gap: 8px;
     border-radius: 32px;

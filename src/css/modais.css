@@ -1,0 +1,310 @@
+
+:root{
+    --color-neutral-8: #3F96FC;
+  
+}
+
+.modal-apply{
+    max-width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+}
+
+.subcontainer-modal-apply{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.modal-apply h1{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.modal-apply span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modal-apply form{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.modal-apply form .container-formulario{
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    margin-bottom: 8px;
+}
+
+form .container-formulario .container-input{
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.container-formulario .container-input label{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: #FF3D9A;
+    margin-bottom: 4px;
+}
+
+form .container-formulario input{
+    height: 20px;
+    padding: 16px 0px 0px 0px;
+    border-radius: 8px;
+    border: 1px solid var(--color-neutral-8);
+    opacity: 0px;
+}
+
+form .container-formulario label strong{
+    color: #3F96FC;
+}
+
+.container-formulario .input-check .label-check  .text-pink{
+    color: #FF3D9A;
+    font-size: 10px;
+}
+
+.input-check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.label-check{
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.container-botoes-modal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-botoes-modal button{
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.abrir-nova-aba{
+    background-color: #04C27F;
+}
+
+.fechar-modal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #37383F;
+    
+}
+
+#checar{
+    background-color: #37383F;
+    border: none;
+    border-radius: 50%;
+}
+
+.container-botoes-modal button .icone-cachorro{
+    width: 26px;
+    height: 26px;
+}
+
+.container-botoes-modal button .icone-flecha{
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+
+
+
+.modal-donate{
+    max-width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+}
+
+.modal-donate h1{
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-donate form{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.modal-donate .container-formulario-donate{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 16px;
+}
+
+
+.container-formulario-donate .container-input-donate{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+}
+
+.container-formulario-donate .container-input-donate div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-formulario-donate .container-input-donate .label-input{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: #FF3D9A;
+    margin-bottom: 4px;
+}
+
+
+.container-formulario-donate .container-input-donate div .label-pagamento{
+    font-family: 'Poppins', sans-serif;
+    width: 90px;
+    height: fit-content;
+    padding: 14px 0px;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: transparent;
+    border: 1.5px solid var(--color-neutral-8);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* .label-pagamento.selecionado{
+
+    color: #FFFFFF;
+    background-color: var(--color-neutral-8);
+} */
+
+
+.container-formulario-donate #email-donate, #ajuda{
+    width: 100%;
+    height: 20px;
+    padding: 16px 0px 0px 0px;
+    border-radius: 8px;
+    border: 1px solid #937AFF;
+    opacity: 0px;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+}
+
+.container-formulario-donate label strong{
+    color: #3F96FC;
+}
+
+.container-formulario-donate .input-check .label-check  .text-pink{
+    color: #FF3D9A;
+    font-size: 10px;
+}
+
+.label-check{
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.check-pagamento{
+    width: 16px;
+    height: 16px;
+    background-color: #37383F;
+    border-radius: 50px;
+}
+
+.container-botoes-donate{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-botoes-donate button{
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;-donate
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.abrir-nova-aba-donate{
+    width: 180px;
+    background-color: #FF3D9A;
+}
+
+.fechar-modal-donate{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #37383F;
+    
+}
+
+#checar-donate{
+    background-color: #37383F;
+    border: none;
+    border-radius: 50%;
+}
+
+.container-botoes-donate button .icone-coracao-branco{
+    width: 18px;
+    height: 18px;
+}
+
+.container-botoes-donate button .icone-flecha{
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+}

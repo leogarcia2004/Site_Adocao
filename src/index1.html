@@ -6,7 +6,7 @@
     <title>Página adoção</title>
     <link rel="stylesheet" href="css/style_pagina1.css">
     <link rel="stylesheet" href="css/style_header_footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/modais.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,64 +20,107 @@
 </head>
 <body>
 
- <section class="modal-apply invisivel">
+ <dialog class="modal-apply">
         
-        <h1>Apply to Adopt</h1>
-        <span>Small text description can goes here</span>
+        <div class="subcontainer-modal-apply">
+            <h1>Apply to Adopt</h1>
+            <span>Small text description can goes here</span>
+        </div>
 
         <form action="">
-            <label for="email">EMAIL:</label>
-            <input type="email" name="email" id="email">
 
-            <label for="nome">FULL NAME:</label>
-            <input type="text" name="nome" id="nome">
+            <div class="container-formulario">
 
-            <label for="mes">DATE OF BIRTH:</label>
-            <input type="month" name="mes" id="mes">
-            
-            <input type="checkbox" name="checar" id="checar">
-            <label for="checar">I agree with Privacy Policy and Terms of Conditions</label>
+                <div class="container-input">
+                    <label for="email">EMAIL<strong>*</strong></label>
+                    <input type="email" required name="email" id="email">
+                </div>
 
-            <button>
-                <img src="imagens/imagens_pagina_1/Shape (6).png" alt="Ícone cachorro desenho">
-                I wanna Adopt!
-            </button>
-            <button class="fechar-modal">
-                <img src="imagens/imagens_pagina_1/Vector (3).png" alt="Ícone flecha voltando">
-                    Cancel
-            </button>
+                <div class="container-input">
+                    <label for="nome">FULL NAME<strong>*</strong></label>
+                    <input type="text" required name="nome" id="nome">
+                </div>
+
+                <div class="container-input">
+                    <label for="">DATE OF BIRTH<strong>*</strong></label>
+                    <select name="" required id="dia"><option value="">day</option></select>
+                    <select name="" required id="mes"></select>
+                    <input type="number" name="dia" min="1" max="31" id="day">
+                </div>
+                
+                <div class="input-check">
+                        <input  type="checkbox" required name="checar" id="checar">
+                        <label class="label-check" for="checar">I agree with <a href="https://google.com.br" target="_blank" class="text-pink">Privacy Policy</a> and <a href="https://google.com.br" target="_blank" class="text-pink"> Terms of Conditions</a></label>
+                </div>
+            </div>
+
+            <div class="container-botoes-modal">
+                <button type="button" class="abrir-nova-aba">
+                        <img class="icone-cachorro" src="imagens/icone_cachorro_branco.png" alt="Ícone cachorro desenho">
+                        I wanna Adopt!
+                </button>
+                
+                <button class="fechar-modal">
+                    <img class="icone-flecha" src="imagens/Vector.png" alt="Ícone flecha voltando">
+                        Cancel
+                </button>
+            </div>
         </form>
-    </section>
+    </dialog>
 
-  <!--  <section class="modal-donate invisivel">
+    <dialog class="modal-donate">
         
-        <h1>Apply to Adopt</h1>
-        <span>Small text description can goes here</span>
+        <h1>Choose your <br> Donate</h1>
 
         <form action="">
-            <label for="email">EMAIL:</label>
-            <input type="email" name="email" id="email">
 
-            <label for="nome">FULL NAME:</label>
-            <input type="text" name="nome" id="nome">
+            <div class="container-formulario-donate">
 
-            <label for="mes">DATE OF BIRTH:</label>
-            <input type="month" name="mes" id="mes">
-            
-            <input type="checkbox" name="checar" id="checar">
-            <label for="checar">I agree with Privacy Policy and Terms of Conditions</label>
+                <div class="container-input-donate">
+                    <label class="label-input" for="email-donate">EMAIL<strong>*</strong></label>
+                    <input type="email" required name="email" id="email-donate">
+                </div>
 
-            <button>
-                <img src="imagens/imagens_pagina_1/Shape (6).png" alt="Ícone cachorro desenho">
-                I wanna Help!
-            </button>
-            <button>
-                <img src="imagens/imagens_pagina_1/Vector (3).png" alt="Ícone flecha voltando">
-                    Cancel
-            </button>
+                <div class="container-input-donate">
+                    <label class="label-input" for="ajuda">HOW MUCH CAN YOU HELP?<strong>*</strong></label>
+                    <input type="number" placeholder="R$ 0,00" name="ajuda" id="ajuda">
+                </div>
+                
+                <div class="container-input-donate">
+                    <label class="label-input" for="">PAYMENT METHOD<strong>*</strong></label>
+                    <div>
+                        <label class="label-pagamento selecionado">
+                            Pix
+                            <input type="checkbox" required name="checar" class="check-pagamento">
+                        </label>
+                        <label class="label-pagamento">
+                            Credit <br> Card
+                            <input type="checkbox" required name="checar" class="check-pagamento">
+                        </label>
+                        
+                        <label class="label-pagamento">
+                            Picpay
+                            <input type="checkbox" required name="checar" class="check-pagamento">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="container-botoes-donate">
+                    <button class="abrir-nova-aba-donate" type="submit">
+                        <img class="icone-coracao-branco" src="imagens/icone_coracao_branco.png" alt="Ícone coração branco">
+                        I wanna Help!
+                    </button>
+                
+                    <button class="fechar-modal-donate">
+                        <img class="icone-flecha" src="imagens/Vector.png" alt="Ícone flecha voltando">
+                            Cancel
+                    </button>
+                </div>
+                
+            </div>
         </form>
-    </section>
-   -->
+    </dialog> 
+   
 
     <header id="cabecalho">
 
@@ -303,7 +346,9 @@
                     <div>
                         <span>Adopt or Foster</span>
                         <p>Provide a forever or temporary home to a homeless animal.</p>
-                        <button id="adotaveis">View Adoptables</button>
+                        <a href="index2.html">
+                            <button id="adotaveis">View Adoptables</button>
+                        </a>
                     </div>
                 </li>
                 <li class="card-acao">
@@ -369,46 +414,56 @@
     </section>
 
     <footer id="rodape">
-        <img src="imagens/Logo_footer.png" alt="Logo adoção">
-        <ul class="list-rodape-navegacao">
-            <li class="list-item-rodape">Adopt a Pet</li>
-            <li class="list-item-rodape">Adoptable Dogs</li>
-            <li class="list-item-rodape">Adoptable Cats</li>
-            <li class="list-item-rodape">Become a Foster</li>
-            <li class="list-item-rodape">Rescue Center</li>
-            <li class="list-item-rodape">Get Involved</li>
 
-            <li class="list-item-rodape">Ways to Donate</li>
-            <li class="list-item-rodape">Upcoming Events</li>
-            <li class="list-item-rodape">Outreach Programs</li>
-            <li class="list-item-rodape">Who We Are</li>
-            <li class="list-item-rodape">Contact Us</li>
-            <li class="list-item-rodape">Shop With Purpose</li>
-        </ul>
+        <div class="container-rodape">
+            <div class="logo-adocao">
+                <img src="imagens/Logo_footer.png" alt="Logo adoção">
+            </div>
+            
+            <ul class="list-rodape-navegacao1">
+                <li class="list-item-rodape">Adopt a Pet</li>
+                <li class="list-item-rodape">Adoptable Dogs</li>
+                <li class="list-item-rodape">Adoptable Cats</li>
+                <li class="list-item-rodape">Become a Foster</li>
+                <li class="list-item-rodape">Rescue Center</li>
+                <li class="list-item-rodape">Get Involved</li>
+            </ul>
 
-        <ul class="list-informacoes">
-            <li class="list-item-info">
-                <img class="icone-endereço" src="imagens/icone_endereco.png" alt="Ícone endereço">
-                <p>PO Box 83644 Middleton, 2452 Wilson</p>
-            </li>
-            <li class="list-item-info">
-                <img class="icone-telefone" src="imagens/icone_phone.png" alt="Ícone telefone">
-                <p>631-249-7325</p>
-            </li>
-            <li class="list-item-info">
-                <img class="icone-email" src="imagens/icone_email.png" alt="Ícone email">
-                <p>pet_home@gmail.com</p>
-            </li>
-        </ul>
-        <div class="redes-sociais">
-            <img class="icone-twitter" src="imagens/Icon_Twitter.png" alt="Ícone Twitter">
-            <img class="icone-whatsApp" src="imagens/icon_whatsapp.png" alt="Ícone WhatsApp">
-            <img class="icone-instagram" src="imagens/icon_instagram.png" alt="Ícone Instagram">
+            <ul class="list-rodape-navegacao2">
+                <li class="list-item-rodape">Ways to Donate</li>
+                <li class="list-item-rodape">Upcoming Events</li>
+                <li class="list-item-rodape">Outreach Programs</li>
+                <li class="list-item-rodape">Who We Are</li>
+                <li class="list-item-rodape">Contact Us</li>
+                <li class="list-item-rodape">Shop With Purpose</li>
+            </ul>
+
+            <div class="container-informacoes-rodape">
+                <ul class="list-informacoes">
+                    <li class="list-item-info">
+                        <img class="icone-endereço" src="imagens/icone_endereco.png" alt="Ícone endereço">
+                        <p>PO Box 83644 <br> Middleton, 2452 Wilson</p>
+                    </li>
+                    <li class="list-item-info">
+                        <img class="icone-telefone" src="imagens/icone_phone.png" alt="Ícone telefone">
+                        <p>631-249-7325</p>
+                    </li>
+                    <li class="list-item-info">
+                        <img class="icone-email" src="imagens/icone_email.png" alt="Ícone email">
+                        <p>pet_home@gmail.com</p>
+                    </li>
+                </ul>
+                <div class="redes-sociais">
+                    <img class="icone-twitter" src="imagens/Icon_Twitter.png" alt="Ícone Twitter">
+                    <img class="icone-whatsApp" src="imagens/icon_whatsapp.png" alt="Ícone WhatsApp">
+                    <img class="icone-instagram" src="imagens/icon_instagram.png" alt="Ícone Instagram">
+                </div>
+            </div>
         </div>
-        <div class="linha"></div>
-        <span class="texto-rodape">​We are not just a rescue, we are a refuge</span>
+
+        <span class="texto-rodape">​We are not just a rescue,<strong> we are a refuge</strong></span>
     </footer>
 
-    <script src="js/script1.js"></script>
+    <script src="js/modais.js"></script>
 </body>
 </html>

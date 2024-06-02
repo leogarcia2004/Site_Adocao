@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style_header_footer.css">
+    <link rel="stylesheet" href="css/style_pagina2.css">
+    <link rel="stylesheet" href="css/modais.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,10 +42,12 @@
         </div>
     </header>
 
-        <button>
-            <img src="imagens/Vector.png" alt="Flecha voltando">
-            <span>back</span>
-        </button>
+        <a href="index1.html">
+            <button> 
+                    <img src="imagens/Vector.png" alt="Flecha voltando">
+                    back     
+            </button>
+        </a>    
         <h1>Our Adoptable Pets</h1>
         <div>
             
@@ -122,44 +126,56 @@
     </section>
 
     <footer id="rodape">
-        <img src="imagens/Logo_footer.png" alt="Logo adoção">
-        <ul class="list-rodape-navegacao">
-            <li class="list-item-rodape">Adopt a Pet</li>
-            <li class="list-item-rodape">Adoptable Dogs</li>
-            <li class="list-item-rodape">Adoptable Cats</li>
-            <li class="list-item-rodape">Become a Foster</li>
-            <li class="list-item-rodape">Rescue Center</li>
-            <li class="list-item-rodape">Get Involved</li>
 
-            <li class="list-item-rodape">Ways to Donate</li>
-            <li class="list-item-rodape">Upcoming Events</li>
-            <li class="list-item-rodape">Outreach Programs</li>
-            <li class="list-item-rodape">Who We Are</li>
-            <li class="list-item-rodape">Contact Us</li>
-            <li class="list-item-rodape">Shop With Purpose</li>
-        </ul>
+        <div class="container-rodape">
+            <div class="logo-adocao">
+                <img src="imagens/Logo_footer.png" alt="Logo adoção">
+            </div>
+            
+            <ul class="list-rodape-navegacao1">
+                <li class="list-item-rodape">Adopt a Pet</li>
+                <li class="list-item-rodape">Adoptable Dogs</li>
+                <li class="list-item-rodape">Adoptable Cats</li>
+                <li class="list-item-rodape">Become a Foster</li>
+                <li class="list-item-rodape">Rescue Center</li>
+                <li class="list-item-rodape">Get Involved</li>
+            </ul>
 
-        <ul class="list-informacoes">
-            <li class="list-item-info">
-                <img class="icone-endereço" src="imagens/icone_endereco.png" alt="Ícone endereço">
-                <p>PO Box 83644 Middleton, 2452 Wilson</p>
-            </li>
-            <li class="list-item-info">
-                <img class="icone-telefone" src="imagens/icone_phone.png" alt="Ícone telefone">
-                <p>631-249-7325</p>
-            </li>
-            <li class="list-item-info">
-                <img class="icone-email" src="imagens/icone_email.png" alt="Ícone email">
-                <p>pet_home@gmail.com</p>
-            </li>
-        </ul>
-        <div class="redes-sociais">
-            <img class="icone-twitter" src="imagens/Icon_Twitter.png" alt="Ícone Twitter">
-            <img class="icone-whatsApp" src="imagens/icon_whatsapp.png" alt="Ícone WhatsApp">
-            <img class="icone-instagram" src="imagens/icon_instagram.png" alt="Ícone Instagram">
+            <ul class="list-rodape-navegacao2">
+                <li class="list-item-rodape">Ways to Donate</li>
+                <li class="list-item-rodape">Upcoming Events</li>
+                <li class="list-item-rodape">Outreach Programs</li>
+                <li class="list-item-rodape">Who We Are</li>
+                <li class="list-item-rodape">Contact Us</li>
+                <li class="list-item-rodape">Shop With Purpose</li>
+            </ul>
+
+            <div class="container-informacoes-rodape">
+                <ul class="list-informacoes">
+                    <li class="list-item-info">
+                        <img class="icone-endereço" src="imagens/icone_endereco.png" alt="Ícone endereço">
+                        <p>PO Box 83644 <br> Middleton, 2452 Wilson</p>
+                    </li>
+                    <li class="list-item-info">
+                        <img class="icone-telefone" src="imagens/icone_phone.png" alt="Ícone telefone">
+                        <p>631-249-7325</p>
+                    </li>
+                    <li class="list-item-info">
+                        <img class="icone-email" src="imagens/icone_email.png" alt="Ícone email">
+                        <p>pet_home@gmail.com</p>
+                    </li>
+                </ul>
+                <div class="redes-sociais">
+                    <img class="icone-twitter" src="imagens/Icon_Twitter.png" alt="Ícone Twitter">
+                    <img class="icone-whatsApp" src="imagens/icon_whatsapp.png" alt="Ícone WhatsApp">
+                    <img class="icone-instagram" src="imagens/icon_instagram.png" alt="Ícone Instagram">
+                </div>
+            </div>
         </div>
-        <div class="linha"></div>
-        <span class="texto-rodape">​We are not just a rescue, we are a refuge</span>
+
+        <span class="texto-rodape">​We are not just a rescue,<strong> we are a refuge</strong></span>
     </footer>
+
+    <script src="js/modais.js"></script>
 </body>
 </html>

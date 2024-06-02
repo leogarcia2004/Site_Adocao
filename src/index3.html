@@ -4,51 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style_pagina3.css">
+    <link rel="stylesheet" href="css/style_header_footer.css">
+    <link rel="stylesheet" href="css/modais.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <header id="cabecalho">
 
-        <div class="container-imagem-lista-header">
-            <img class="img-topo" src="imagens/imagens_pagina_1/icone_cachorro-gato.png" alt="Ícone cachorro e gato">
-            <ul class="list">
-                <li class="list-item">Rescue сenter</li>
-                <li class="list-item">Apply to adopt</li>
-                <li class="list-item">Volunteer</li>
-                <li class="list-item">Ways to give</li>
-                <li class="list-item">Events</li>
-            </ul>
-        </div>
+        <div class="container-cabecalho">
 
-        <div class="container-botoes-header">
+            <nav class="container-imagem-lista-header">
+                <img class="img-topo" src="imagens/icone_cachorro-gato.png" alt="Ícone cachorro e gato">
+                <ul class="list">
+                    <li class="list-item">Rescue сenter</li>
+                    <li class="list-item">Apply to adopt</li>
+                    <li class="list-item">Volunteer</li>
+                    <li class="list-item">Ways to give</li>
+                    <li class="list-item">Events</li>
+                </ul>
+            </nav>
 
-            <div class="telefone">
-                <img class="img-telefone" src="imagens/imagens_pagina_1/icone_telefone.png" alt="Ícone telefone">
-                631-249-7325
+            <div class="container-botoes-header">
+                <div class="telefone">
+                    <img class="img-telefone" src="imagens/icone_telefone.png" alt="Ícone telefone">
+                    631-249-7325
+                </div>
+                <button class="botao-donate">
+                    <img class="img-coracao-branco" src="imagens/icone_coracao_branco.png" alt="Ícone coração branco">
+                    Donate
+                </button>
             </div>
-
-            <button class="botao-donate">
-                <img class="img-coracao-branco" src="imagens/imagens_pagina_1/icone_coracao_branco.png" alt="Ícone coração branco">
-                Donate
-            </button>
         </div>
-
     </header>
 
-    <div class="linha"></div>
+    <section id="secao-parabens">
 
-    <section>
-        
-        <button>
-            <img src="imagens/imagens_pagina_1/Vector (3).png" alt="Flecha voltando">
-            back
-        </button>
-        <h1>Success!</h1>
-        <p>Free your creativity and create a beautiful success page to thank your user for subscribing/donating to our project.</p>
+            <button>
+                <a href="index1.html">
+                    <img class="icone-flecha" src="imagens/Vector.png" alt="Flecha voltando">
+                    Back
+                </a>
+            </button>
+            <h1>Success!</h1>
+            <p>Free your creativity and create a beautiful success page to thank your user for subscribing/donating to our project.</p>
+
     </section>
+    
+    <script src="js/modais.js"></script>
 </body>
 </html>
