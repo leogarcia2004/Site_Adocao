@@ -114,6 +114,7 @@ input[type=number]::-webkit-outer-spin-button,
     width: 90px;
     padding: 10px 0px 10px 10px;
     border: 1px solid #3F96FC;
+    border-radius: 8px;
     cursor: pointer;
 }
 
