@@ -35,7 +35,7 @@ body{
 
 }
 
-#secao1, #secao2, #secao3, #secao4, #secao6, #rodape{
+#secao1, #secao2, #secao3, #secao4, #secao6{
     width: 100%;
     padding-bottom: 80px; 
 }
@@ -181,23 +181,25 @@ button{
     flew-flow: row wrap;
     justify-content: center;
     margin: 0 auto;
+    animation: slide 20s infinite;
     gap: 20px;
 }
 
 .imagens .imagem-animal{
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    transition: transform 2s ease;
 }
 
-.botao-passagem-imagem{
+
+.botao-passagem-imagem, .botao-voltar-imagem{
     background-color: var(--color-neutral-0);
     border-radius: 50%;
     border: none;
     padding: 6px;
     cursor: pointer;
+    outline: none;
 }
-
-
 
 .botoes-carrosel{
     display: flex;
@@ -206,6 +208,7 @@ button{
 }
 
 .botao-carrosel{
+    background-color: #37383F;
     border-radius: 50%;
     border: none;
     width: 10px;
@@ -215,7 +218,6 @@ button{
 .botao-carrosel.selecionado{
     background-color: var(--color-neutral-2);
 }
-
 
 #secao3{
     width: 100%;

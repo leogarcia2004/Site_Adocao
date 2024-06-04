@@ -39,7 +39,6 @@ body{
 }
 
 #secao-disponiveis button{
-    width: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +92,6 @@ a button{
 }
 
 #secao-disponiveis ul li div button{
-
     background: var(--color-neutral-3);
 }
 
@@ -103,10 +101,8 @@ a button{
 }
 
 #secao-disponiveis ul li .imagem-animal{
-
     width: 220px;
     height: 220px;
-
 }
 
 

@@ -20,110 +20,117 @@
 </head>
 <body>
 
- <dialog class="modal-apply">
-        
-        <div class="subcontainer-modal-apply">
-            <h1>Apply to Adopt</h1>
-            <span>Small text description can goes here</span>
-        </div>
-
-        <form action="">
-
-            <div class="container-formulario">
-
-                <div class="container-input">
-                    <label for="email">EMAIL<strong>*</strong></label>
-                    <input type="email" required name="email" id="email">
-                </div>
-
-                <div class="container-input">
-                    <label for="nome">FULL NAME<strong>*</strong></label>
-                    <input type="text" required name="nome" id="nome">
-                </div>
-
-                <div class="container-input">
-                    <label for="">DATE OF BIRTH<strong>*</strong></label>
-                    <select name="" required id="dia"><option value="">day</option></select>
-                    <select name="" required id="mes"></select>
-                    <input type="number" name="dia" min="1" max="31" id="day">
-                </div>
-                
-                <div class="input-check">
-                        <input  type="checkbox" required name="checar" id="checar">
-                        <label class="label-check" for="checar">I agree with <a href="https://google.com.br" target="_blank" class="text-pink">Privacy Policy</a> and <a href="https://google.com.br" target="_blank" class="text-pink"> Terms of Conditions</a></label>
-                </div>
-            </div>
-
-            <div class="container-botoes-modal">
-                <button type="button" class="abrir-nova-aba">
-                        <img class="icone-cachorro" src="imagens/icone_cachorro_branco.png" alt="Ícone cachorro desenho">
-                        I wanna Adopt!
-                </button>
-                
-                <button class="fechar-modal">
-                    <img class="icone-flecha" src="imagens/Vector.png" alt="Ícone flecha voltando">
-                        Cancel
-                </button>
-            </div>
-        </form>
-    </dialog>
-
     <dialog class="modal-donate">
         
-        <h1>Choose your <br> Donate</h1>
+        <div class="container-modal-donate">
 
-        <form action="">
+            <h1>Choose your <br> Donate</h1>
+            <form id="form-donate" action="index3.html">
 
-            <div class="container-formulario-donate">
+                <div class="container-formulario-donate">
 
-                <div class="container-input-donate">
-                    <label class="label-input" for="email-donate">EMAIL<strong>*</strong></label>
-                    <input type="email" required name="email" id="email-donate">
-                </div>
+                    <div class="container-input-donate">
+                        <label class="label-input" for="email-donate">EMAIL<strong>*</strong></label>
+                        <input type="email" required name="email" id="email-donate">
+                    </div>
 
-                <div class="container-input-donate">
-                    <label class="label-input" for="ajuda">HOW MUCH CAN YOU HELP?<strong>*</strong></label>
-                    <input type="number" placeholder="R$ 0,00" name="ajuda" id="ajuda">
-                </div>
-                
-                <div class="container-input-donate">
-                    <label class="label-input" for="">PAYMENT METHOD<strong>*</strong></label>
-                    <div>
-                        <label class="label-pagamento selecionado">
-                            Pix
-                            <input type="checkbox" required name="checar" class="check-pagamento">
-                        </label>
-                        <label class="label-pagamento">
-                            Credit <br> Card
-                            <input type="checkbox" required name="checar" class="check-pagamento">
-                        </label>
+                    <div class="container-input-donate">
+                        <label class="label-input" for="ajuda">HOW MUCH CAN YOU HELP?<strong>*</strong></label>
+                        <input type="number" required placeholder="R$ 0,00" name="ajuda" id="ajuda">
+                    </div>
+            
+                    <div class="container-input-donate">
+                        <label class="label-input" for="">PAYMENT METHOD<strong>*</strong></label>
                         
-                        <label class="label-pagamento">
-                            Picpay
-                            <input type="checkbox" required name="checar" class="check-pagamento">
-                        </label>
+                        <div class="subcontainer-input-donate">
+
+                                <div class="input-e-label">
+                                    <input type="radio" name="pix" class="input-pagar" id="pix" checked>
+                                    <label class="label-pagamento" for="pix">Pix</label>
+                                    
+                                </div>
+
+                                <div class="input-e-label">
+                                    <input type="radio" name="pix" class="input-pagar" id="card">
+                                    <label class="label-pagamento" for="card">Card <br> Credit</label>
+                                </div>
+                            
+                                <div class="input-e-label">
+                                    <input type="radio" name="pix" class="input-pagar" id="picpay">
+                                    <label class="label-pagamento" for="picpay">Picpay</label>
+                                </div>
+            
+                        </div>
+                    </div>
+                    <div class="container-botoes-donate">
+                        <button class="abrir-nova-aba-donate" type="submit">
+                            <img class="icone-coracao-branco" src="imagens/icone_coracao_branco.png" alt="Ícone coração branco">
+                            I wanna Help!
+                        </button>
+                    </div>
+            
+                </div>
+            </form>
+            <button class="fechar-modal-donate">
+                <img class="icone-flecha" src="imagens/Vector.png" alt="Ícone flecha voltando">
+                    Cancel
+            </button>
+        </div>
+    </dialog>
+   
+    <dialog class="modal-apply">
+        
+        <div class="container-modal-apply">
+
+            <div class="subcontainer-modal-apply">
+                <h1>Apply to Adopt</h1>
+                <span>Small text description can goes here</span>
+            </div>
+
+            <form id="form-apply" action="index3.html">
+
+                <div class="container-formulario">
+
+                    <div class="container-input">
+                        <label for="email">EMAIL<strong>*</strong></label>
+                        <input type="email" required name="email" id="email">
+                    </div>
+
+                    <div class="container-input">
+                        <label for="nome">FULL NAME<strong>*</strong></label>
+                        <input type="text" required name="nome" id="nome">
+                    </div>
+
+                    <div class="container-input">
+                        <label for="data">DATE OF BIRTH<strong>*</strong></label>
+                        <input type="date" name="data" id="data">
+                    </div>
+            
+                    <div class="input-check">
+                        
+                        <input type="checkbox" required name="checar" id="checar"> 
+                        <label class="label-check" for="checar">I agree with <a href="https://google.com.br" target="_blank" class="text-pink">Privacy Policy</a> and <a href="https://google.com.br" target="_blank" class="text-pink"> Terms of Conditions</a></label>
                     </div>
                 </div>
 
-                <div class="container-botoes-donate">
-                    <button class="abrir-nova-aba-donate" type="submit">
-                        <img class="icone-coracao-branco" src="imagens/icone_coracao_branco.png" alt="Ícone coração branco">
-                        I wanna Help!
-                    </button>
-                
-                    <button class="fechar-modal-donate">
-                        <img class="icone-flecha" src="imagens/Vector.png" alt="Ícone flecha voltando">
-                            Cancel
-                    </button>
+                <div class="container-botoes-modal">
+                    <button type="submit" class="abrir-nova-aba">
+                            <img class="icone-cachorro" src="imagens/icone_cachorro_branco.png" alt="Ícone cachorro desenho">
+                            I wanna Adopt!
+                    </button>       
                 </div>
-                
-            </div>
-        </form>
-    </dialog> 
-   
+            </form>
+            <button class="fechar-modal">
+                <img class="icone-flecha" src="imagens/Vector.png" alt="Ícone flecha voltando">
+                    Cancel
+            </button>
+        </div>
+    </dialog>
+
+    
 
     <header id="cabecalho">
-
+        
         <div class="container-cabecalho">
 
             <nav class="container-imagem-lista-header">
@@ -202,18 +209,15 @@
             </div>
 
             <div class="container-passagem-imagem">
-                <button class="botao-passagem-imagem">
+                
+                <button class="botao-voltar-imagem">
                     <img src="imagens/icone_flecha_voltando.png" alt="ícone flecha">
                 </button>
                 <div class="imagens">
-                    <img class="imagem-animal" src="imagens/imagem_gato1_secao2.png" alt="Foto gato">
-                    <img class="imagem-animal" src="imagens/imagem_gato2_secao2.png" alt="Foto gato">
-                    <img class="imagem-animal" src="imagens/imagem_cachorro1_secao2.png" alt="Foto cahcorro">
-                    <img class="imagem-animal" src="imagens/imagem_cachorro2_secao2.png" alt="Foto cachorro">
-                    <img class="imagem-animal invisivel" src="imagens/imagem_cachorro2_secao2.png" alt="Foto cachorro">
-                    <img class="imagem-animal invisivel" src="imagens/imagem_cachorro2_secao2.png" alt="Foto cachorro">
-                    <img class="imagem-animal invisivel" src="imagens/imagem_cachorro2_secao2.png" alt="Foto cachorro">
-                    <img class="imagem-animal invisivel" src="imagens/imagem_cachorro2_secao2.png" alt="Foto cachorro">
+                    <img class="imagem-animal imagem-1"  src="imagens/imagem_gato1_secao2.png" alt="Foto gato">
+                    <img class="imagem-animal imagem-2" src="imagens/imagem_gato2_secao2.png" alt="Foto gato">
+                    <img class="imagem-animal imagem-3" src="imagens/imagem_cachorro1_secao2.png" alt="Foto cahcorro">
+                    <img class="imagem-animal imagem-4" src="imagens/imagem_cachorro2_secao2.png" alt="Foto cachorro">
                 </div>
                 <button class="botao-passagem-imagem">
                     <img src="imagens/icone_flecha.png" alt="ícone flecha">
@@ -387,7 +391,9 @@
                 </div>
 
                 <div class="container-botoes-secao5">
-                    <button class="adotaveis">View Adoptables</button>
+                    <a href="index2.html">
+                        <button class="adotaveis">View Adoptables</button>
+                    </a>
                     <button class="botao-adocao secao5">Apply to Adopt</button>
                 </div>
             </div>
@@ -401,7 +407,7 @@
 
         
     <section id="secao6">    
-        <div class="container-secao6">
+        <form action="index3.html" class="container-secao6">
             <h1>Subscribe to our newsletter</h1>
             <p>for updates on shelter events, fundraising parties, and heartwarming stories <br>
                 of animals finding their forever homes.
@@ -410,7 +416,7 @@
                 <input type="email" required placeholder="Enter your email" name="email" id="email-secao6">
                 <button class="but-subscribe">Subscribe</button>
             </div>
-        </div>
+        </form>
     </section>
 
     <footer id="rodape">
@@ -465,5 +471,6 @@
     </footer>
 
     <script src="js/modais.js"></script>
+    <script src="js/carrosel.js"></script>
 </body>
 </html>

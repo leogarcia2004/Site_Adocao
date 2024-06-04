@@ -37,15 +37,16 @@ body{
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 }
 
-button a .icone-flecha{
+button .icone-flecha{
     width: 10px;
     height: 14px;
     margin-right: 8px;
 }
 
-button a {
+button{
     color: #FFFFFF;
 }
 
